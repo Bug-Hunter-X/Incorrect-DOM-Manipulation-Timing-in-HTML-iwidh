@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will disappear!
+  </div>
+  <script>
+    document.getElementById("myDiv").style.display = "none";
+    //Bug: Incorrectly placing script tag before div tag.
+    //Solution: Move the script tag to the end of the body.
+  </script>
+</body>
+</html>
